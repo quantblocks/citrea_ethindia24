@@ -1,0 +1,45 @@
+{
+	"compiler": {
+		"version": "0.8.26+commit.8a97fa7a"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"contracts/libraries/StableSwapMath.sol": "StableSwapMath"
+		},
+		"evmVersion": "shanghai",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"contracts/libraries/StableSwapMath.sol": {
+			"keccak256": "0x0febfcb572b37c9e5fdd16fef7a77b62e8de27d9ef0747476721b8ec125c6c67",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://fca0e8cc0c5ab57db0d62af000a2d8ffa4819a7578c7cbbdd0c1b7525f20674b",
+				"dweb:/ipfs/Qmbe2N2GFaa3zkN7bARsxNas6WKfLe9hoCYYLgFbL3pqeg"
+			]
+		}
+	},
+	"version": 1
+}

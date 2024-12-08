@@ -1,0 +1,65 @@
+{
+	"compiler": {
+		"version": "0.8.26+commit.8a97fa7a"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "utilization",
+						"type": "uint256"
+					}
+				],
+				"name": "getRate",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"contracts/interfaces/IRateModel.sol": "IRateModel"
+		},
+		"evmVersion": "shanghai",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"contracts/interfaces/IRateModel.sol": {
+			"keccak256": "0xaf15d3098beacfdc1e94478219059784b20fa72e16a2eb6961955196538093a8",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://18d124a5d5ab1243ebb55e1aa6a7bd123aaf49e0732c0d86c008e87d3e5bfc86",
+				"dweb:/ipfs/QmQcTEpcVfure4nMRcxCKezoaqqq4PshgVtV8u9FQ7X5tH"
+			]
+		}
+	},
+	"version": 1
+}

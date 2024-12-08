@@ -1,0 +1,45 @@
+{
+	"compiler": {
+		"version": "0.8.26+commit.8a97fa7a"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"contracts/interfaces/IGovernor.sol": "IGovernor"
+		},
+		"evmVersion": "shanghai",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"contracts/interfaces/IGovernor.sol": {
+			"keccak256": "0xfb4e11fba7e48a79571c954022b378d81715c73ecc528c6c29e007903b3e7362",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://fc0f448ed27e50a0238242b1787feee6e4daa931856db03aa4f7f6d47042eaf5",
+				"dweb:/ipfs/QmZHSQoypaRXoKK8xwLueeGgepiZMhGMSyZ4a9sipwPm3a"
+			]
+		}
+	},
+	"version": 1
+}

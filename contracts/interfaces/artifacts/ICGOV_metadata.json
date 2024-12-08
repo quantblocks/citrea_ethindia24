@@ -1,0 +1,64 @@
+{
+	"compiler": {
+		"version": "0.8.26+commit.8a97fa7a"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "to",
+						"type": "address"
+					},
+					{
+						"internalType": "uint256",
+						"name": "amount",
+						"type": "uint256"
+					}
+				],
+				"name": "mint",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"contracts/interfaces/ICGOV.sol": "ICGOV"
+		},
+		"evmVersion": "shanghai",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"contracts/interfaces/ICGOV.sol": {
+			"keccak256": "0x3813ecbae45c068eee10f18cfa8d6322efc19501365a688a3f8020e82d505a56",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://74e5d987e5cdb36b131141f67ed7339431c71ec218873397a9da6ed4a75957a8",
+				"dweb:/ipfs/QmU3MfPDUjmNZmpRpBGK5dyD1NpAYkC2RPcDYe7zSLWjAe"
+			]
+		}
+	},
+	"version": 1
+}
