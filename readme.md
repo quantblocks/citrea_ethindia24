@@ -1,6 +1,7 @@
 # Citrea DEX and Stablecoin Ecosystem
 
-This repository presents a conceptual decentralized finance (DeFi) system on the Citrea network (a hypothetical blockchain). It includes a variety of smart contracts that enable:
+
+This project implements a decentralized finance (DeFi) ecosystem on the Citrea blockchain, integrating a Light Bitcoin Client for seamless interoperability with the Bitcoin blockchain. It facilitates Bitcoin (`BTC`) bridging into the system and enables decentralized swaps, lending, governance, and payment functionalities. It includes a variety of smart contracts that enable:
 
 - Tokenized BTC (`cBTC`) and a stablecoin (`cUSD`) backed by `cBTC`.
 - Automated Market Making (AMM) DEX for swapping between `cBTC` and `cUSD`.
@@ -10,8 +11,43 @@ This repository presents a conceptual decentralized finance (DeFi) system on the
 - Price oracle aggregation.
 - A `PaymentGateway` contract to facilitate merchant payments, including off-chain integration with fiat payment gateways like Razorpay.
 
-**Disclaimer:**  
-This code is provided as a proof-of-concept and is **not production-ready**. Thorough audits, testing, and modifications would be required before any live deployment.
+
+
+
+---
+
+## Features
+
+1. **Light Bitcoin Client Integration:**
+   - Verifies Bitcoin transactions using proof data.
+   - Fetches the latest Bitcoin blockchain height.
+   - Bridges Bitcoin into the ecosystem by minting equivalent `cBTC`.
+
+2. **Tokenized BTC and Stablecoins:**
+   - `cBTC`: A wrapped Bitcoin token bridged into the Citrea network.
+   - `cUSD`: A stablecoin backed by `cBTC` collateral, mintable via smart contracts.
+
+3. **Decentralized Finance Components:**
+   - Automated Market Maker DEX (AMMDEX) for token swaps.
+   - Lending pool for borrowing `cUSD` against `cBTC` collateral.
+   - Payment gateway for merchant transactions, with potential integration with fiat payment systems like Razorpay.
+
+4. **Governance and Stability:**
+   - On-chain governance with `cGOV` tokens.
+   - Price oracles and collateral managers ensure fair valuations.
+   - Insurance fund to cover protocol shortfalls.
+
+---
+
+## Light Bitcoin Client
+
+### Overview
+The Light Bitcoin Client is implemented as an interface, **`ILightClient.sol`**, which provides:
+- **Verification of Bitcoin Transactions:** Ensures Bitcoin payments are valid before bridging them into the ecosystem.
+- **Blockchain Synchronization:** Retrieves the latest block height of the Bitcoin blockchain for validation purposes.
+
+---
+
 
 ## Directory Structure
 
@@ -67,7 +103,7 @@ citrea-dex/
 ├── package.json
 ├── .prettierrc.json
 └── README.md
-
+```
 
 
 ## Contracts Overview
@@ -296,11 +332,4 @@ This section explains how to use the smart contracts in this repository with [Re
 
 3. **Token Address Not Recognized:**
    - Verify the deployed addresses are correctly passed to dependent contracts during deployment.
-
----
-
-### Notes
-
-- This system is designed for testing and educational purposes on testnets or local environments like Remix VM.
-- To deploy on live networks (e.g., Ethereum or Citrea), ensure all contracts are thoroughly tested and audited.
 
